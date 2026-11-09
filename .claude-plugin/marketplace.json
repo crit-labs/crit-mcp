@@ -1,0 +1,23 @@
+{
+  "name": "crit-labs",
+  "description": "crit-labs' plugins: crit, which builds a faster LLM inference engine for your own GPU.",
+  "owner": {
+    "name": "crit-labs",
+    "url": "https://github.com/crit-labs"
+  },
+  "plugins": [
+    {
+      "name": "crit",
+      "source": "./",
+      "category": "development",
+      "tags": [
+        "llm",
+        "inference",
+        "gpu",
+        "cuda",
+        "performance",
+        "local-llm"
+      ]
+    }
+  ]
+}

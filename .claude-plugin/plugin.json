@@ -1,0 +1,31 @@
+{
+  "name": "crit",
+  "displayName": "crit: build a faster LLM inference engine for your GPU",
+  "description": "Have the agent build, benchmark and serve a bespoke LLM inference engine tuned to your own NVIDIA GPU: CUDA kernels, quantization, speculative decoding and KV-cache techniques, checked for quality with crit Eval and served through an OpenAI-compatible API.",
+  "version": "0.1.0",
+  "author": {
+    "name": "crit-labs",
+    "url": "https://github.com/crit-labs"
+  },
+  "homepage": "https://crit-hub.dev",
+  "repository": "https://github.com/crit-labs/crit-mcp",
+  "license": "Apache-2.0",
+  "keywords": [
+    "llm",
+    "inference",
+    "inference-engine",
+    "gpu",
+    "cuda",
+    "kernels",
+    "speculative-decoding",
+    "quantization",
+    "kv-cache",
+    "benchmark",
+    "evaluation",
+    "openai-compatible",
+    "local-llm",
+    "self-hosted",
+    "mcp"
+  ],
+  "icon": "./assets/icon.png"
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "crit",
+  "version": "0.1.0",
+  "description": "Have the agent build, benchmark and serve a bespoke LLM inference engine tuned to your own NVIDIA GPU: CUDA kernels, quantization, speculative decoding and KV-cache techniques, checked for quality with crit Eval and served through an OpenAI-compatible API.",
+  "author": {
+    "name": "crit-labs",
+    "url": "https://github.com/crit-labs"
+  },
+  "homepage": "https://crit-hub.dev",
+  "repository": "https://github.com/crit-labs/crit-mcp",
+  "license": "Apache-2.0",
+  "keywords": [
+    "llm",
+    "inference",
+    "inference-engine",
+    "gpu",
+    "cuda",
+    "kernels",
+    "speculative-decoding",
+    "quantization",
+    "kv-cache",
+    "benchmark",
+    "evaluation",
+    "openai-compatible",
+    "local-llm",
+    "self-hosted",
+    "mcp"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "crit",
+        "shortDescription": "Build a faster LLM inference engine for your GPU",
+        "longDescription": "crit has the agent build a bespoke inference engine for one open LLM on your own NVIDIA GPU: it profiles the device, tunes CUDA kernels, tries quantization, speculative decoding and KV-cache techniques, measures every candidate's speed and quality with crit Eval, and serves the best one through an OpenAI-compatible API on localhost.",
+        "developerName": "crit-labs",
+        "category": "Coding",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "websiteURL": "https://crit-hub.dev",
+        "privacyPolicyURL": "https://github.com/crit-labs/crit/blob/main/mcp/README.md#privacy",
+        "defaultPrompt": [
+          "Build me a fast engine for Qwen3.8-27B on this GPU, and serve the best candidate.",
+          "Run Eval on candidate-0003 and tell me which gates it fails and why."
+        ],
+        "brandColor": "#B0186E",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png"
+      }
+    }
+  }
+}

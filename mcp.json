@@ -1,0 +1,6 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "crit": {"type": "stdio", "command": "crit", "args": ["mcp", "--without", "crit_run_cost"]}
+  }
+}
