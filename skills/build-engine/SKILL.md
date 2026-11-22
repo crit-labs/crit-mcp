@@ -12,9 +12,9 @@ run the same commands.
 
 ## Before you start
 
-- crit 0.17.2 or later must be installed where the engines run (`python -m pip install "crit>=0.17.2"`), with an
-  NVIDIA GPU and a CUDA toolkit. Check with `crit --version`; if it is missing, say so and give that install
-  command.
+- crit 0.17.2 or later must be installed where the engines run, with an NVIDIA GPU and a CUDA toolkit. Check with
+  `crit --version`; if it is missing or older, say so and point the user to crit's install instructions,
+  https://github.com/crit-labs/crit#quick-start.
 - **Read the workflow first.** The installed crit carries its own rules for the release it is: read AGENTS.md at
   that release's tag, `https://github.com/crit-labs/crit/blob/vVERSION/AGENTS.md` (VERSION from `crit --version`),
   or the `crit://AGENTS.md` resource when the crit MCP server is connected. A run's brief (`agent_request.md`)
