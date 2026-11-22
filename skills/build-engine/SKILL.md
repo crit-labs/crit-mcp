@@ -15,9 +15,9 @@ run the same commands.
 - crit 0.17.2 or later must be installed where the engines run, with an NVIDIA GPU and a CUDA toolkit. Check with
   `crit --version`; if it is missing or older, say so and point the user to crit's install instructions,
   https://github.com/crit-labs/crit#quick-start.
-- **Read the workflow first.** The installed crit carries its own rules for the release it is: read AGENTS.md at
-  that release's tag, `https://github.com/crit-labs/crit/blob/vVERSION/AGENTS.md` (VERSION from `crit --version`),
-  or the `crit://AGENTS.md` resource when the crit MCP server is connected. A run's brief (`agent_request.md`)
+- **Read the workflow first.** The installed crit carries its own rules for the release it is: read the
+  `crit://AGENTS.md` resource when the crit MCP server is connected, or else the AGENTS.md it installed, in
+  `crit/library/guides/` under the Location that `python -m pip show crit` prints. A run's brief (`agent_request.md`)
   names the same guides. Their rules win over this summary when they differ.
 - **Name the folders.** Pass the crit project folder (`--project`, the folder of `settings.toml` and `runs/`) as an
   absolute path in the user's workspace on every `crit run` command, and keep every other path absolute too.
