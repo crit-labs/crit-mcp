@@ -1,6 +1,6 @@
 ---
 name: build-engine
-description: Build, measure and serve a bespoke inference engine for an open LLM on the user's own NVIDIA GPU with crit. Use when the user wants a model to run faster on their GPU, a custom or specialized inference engine, CUDA kernel or quantization work on one model, speculative decoding, a crit run, crit Eval results, or a crit-hub engine installed and served.
+description: Build, measure and serve a bespoke inference engine for an open LLM on the user's own NVIDIA GPU with crit. Use when the user wants a model to run faster on their GPU, a custom or specialized inference engine, CUDA kernel or quantization work on one model, speculative decoding, a crit run, or crit Eval results.
 ---
 
 # Build an engine with crit
@@ -28,7 +28,8 @@ run the same commands.
 1. **Set up.** Agree the model, GPU, workload, quality criteria and limits with the user. Probe the device
    (`crit eval probe`), create the run (`crit run --project P create`) and study the model
    (`crit run --project P --id RUN recon`).
-2. **Start from what exists.** If crit-hub has an engine for the model, start from it (`crit pull`).
+2. **Start from what exists.** Check crit-hub (https://crit-hub.dev) for an engine already built for the model and
+   GPU, and tell the user; AGENTS.md says how to start from one.
 3. **Build candidates.** Plan each one (`crit run ... plan`), allocate it (`crit run ... candidate`), build and
    package it, and measure it with Eval (`crit run ... eval`); `crit eval status` names the next goal. Search crit's
    techniques (`crit inference search`) and kernels (`crit kernels search`) before writing new code.

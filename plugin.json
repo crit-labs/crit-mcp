@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "crit",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Have the agent build, benchmark and serve a bespoke LLM inference engine tuned to your own NVIDIA GPU: CUDA kernels, quantization, speculative decoding and KV-cache techniques, checked for quality with crit Eval and served through an OpenAI-compatible API.",
   "author": {
     "name": "crit-labs",
