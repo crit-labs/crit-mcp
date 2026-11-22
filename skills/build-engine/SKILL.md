@@ -26,12 +26,12 @@ run the same commands.
 ## The workflow
 
 1. **Set up.** Agree the model, GPU, workload, quality criteria and limits with the user. Probe the device
-   (`crit eval probe`), create the run (`crit run --project P create`) and study the model
+   (the crit eval probe command), create the run (`crit run --project P create`) and study the model
    (`crit run --project P --id RUN recon`).
 2. **Start from what exists.** Check crit-hub (https://crit-hub.dev) for an engine already built for the model and
    GPU, and tell the user; AGENTS.md says how to start from one.
 3. **Build candidates.** Plan each one (`crit run ... plan`), allocate it (`crit run ... candidate`), build and
-   package it, and measure it with Eval (`crit run ... eval`); `crit eval status` names the next goal. Search crit's
+   package it, and measure it with Eval (crit run ... eval); crit eval status names the next goal. Search crit's
    techniques (`crit inference search`) and kernels (`crit kernels search`) before writing new code.
 4. **Long commands.** Builds and Eval take a while: run them in the background, follow their logs, and do the next
    round's CPU work while the GPU is busy.
