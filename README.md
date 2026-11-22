@@ -1,4 +1,27 @@
-# crit for Claude Code and Codex
+<div align="center">
+
+<h1 align="center">
+  <img src="https://raw.githubusercontent.com/crit-labs/.github/main/brand/logo.png" width="88" alt="crit logo" /><br />
+  crit-mcp
+</h1>
+
+### crit as a plugin for Claude Code and Codex.
+
+<p align="center">
+  <a href="https://github.com/crit-labs/crit-mcp#install"><img src="https://raw.githubusercontent.com/crit-labs/.github/main/brand/button-docs.svg" alt="Docs" height="34" /></a>
+  <a href="https://crit-hub.dev"><img src="https://raw.githubusercontent.com/crit-labs/.github/main/brand/button-website.svg" alt="Website" height="34" /></a>
+  <a href="https://huggingface.co/crit-labs"><img src="https://raw.githubusercontent.com/crit-labs/.github/main/brand/button-huggingface.svg" alt="Hugging Face" height="34" /></a>
+  <a href="https://github.com/crit-labs/crit-mcp/releases"><img src="https://raw.githubusercontent.com/crit-labs/.github/main/brand/button-releases.svg" alt="Releases" height="34" /></a>
+  <a href="https://github.com/crit-labs/crit-mcp/blob/main/LICENSE"><img src="https://raw.githubusercontent.com/crit-labs/.github/main/brand/button-license.svg" alt="License" height="34" /></a>
+</p>
+
+</div>
+
+---
+
+<br>
+<br>
+<br>
 
 Make an open LLM run faster on your own GPU. With this plugin, your coding agent builds a bespoke inference engine
 for one model on one NVIDIA GPU: it profiles the hardware, tunes CUDA kernels, tries quantization, speculative
@@ -13,8 +36,9 @@ in crit's [mcp/](https://github.com/crit-labs/crit/tree/main/mcp) folder.
 
 ## Install
 
-1. Install crit 0.17.2 or later where your engines run (an NVIDIA GPU with a CUDA toolkit, Python 3.11+):
-   `python -m pip install "crit>=0.17.2"`. On Windows with engines in WSL, run your agent inside WSL.
+1. Install crit 0.17.2 or later where your engines run (an NVIDIA GPU with a CUDA toolkit, Python 3.11+), as
+   [crit's quick start](https://github.com/crit-labs/crit#quick-start) describes. On Windows with engines in WSL,
+   run your agent inside WSL.
 2. Add the plugin:
    - **Claude Code:** `/plugin marketplace add crit-labs/crit-mcp`, then `/plugin install crit@crit-labs`
    - **Codex:** `codex plugin marketplace add crit-labs/crit-mcp`, then install `crit` from it
